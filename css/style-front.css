@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+/* UNIVERSAL.. */
+
+* {
+    font-family: 'Lato', Helvetica, sans-serif;
+    color: #333447;
+    line-height: 1.5;
+  }
+
+  body {
+      background-color: orange;
+      padding: 0;   
+      margin: 0;
+  }
+
+  ul {
+      list-style: none;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+/* UTILITIES */
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 25px;
+}
+
+.flex {
+    display: flex;
+    height: 100%;
+}
+
+/* HEADER... */
+
+.navbar  {
+    background-color: orange;
+    height: 75px;
+    border-bottom: 0.1px #319ac7 solid;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 3px white solid;
+    font-weight: bold;
+}
+
+.current a {
+    color: white;
+}
+
+/* SHOWCASE... */
+
+.showcase {
+    height: auto;
+    background-color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    height: auto;
+    padding: 25px;
+    background-color: white;
+}
+
+.about-card {
+    background-color: orange;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.5);
+    padding: 10px 5px;
+    height: auto;
+    /* overflow: auto; */
+    /* position: relative; */
+    top: 50px;
+    z-index: 100;
+}
+
+.about-card h3 {
+    text-align: center;
+}
+
+.about-card img{
+    width: 90%;
+    height: auto;
+    padding: 0 0 5px 5px;
+}
+
+.projects-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.5);
+    padding: 10px 5px;
+    height: auto;
+    /* overflow: auto; */
+    /* position: relative; */
+    top: 50px;
+    z-index: 100;
+}
+
+.projects-card h3 {
+    text-align: center;
+}
+
+
+/* SPACE...
+
+.space {
+    height: 275px;
+    background-color: white;
+} */
+
+/* FOOTER... */
+
+.info {
+    /* padding-top: 40px; */
+    height: auto;
+    background-color: orange;
+    border-top: 0.1px #319ac7 solid;
+}
+
+.info .flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy-info, .socials {
+    padding: 0 30px;
+}
