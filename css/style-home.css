@@ -9,7 +9,7 @@
   }
 
   body {
-      background-color: orange;
+      /* background-color: orange; */
       padding: 0;   
       margin: 0;
   }
@@ -70,13 +70,13 @@
 /* SECTION... */
 
 .about {
-    background-color: orange;
-    height: 350px;
-    overflow: visible;
-    position: relative;
+    background-color: white;
+    height: auto;
+    padding: 25px;
+    /* position: relative; */
 }
 
-.about::after {
+/* .about::after {
     content: '';
     position: absolute;
     background-color: white;
@@ -86,19 +86,19 @@
     left: 0;
     transform: skewY(-3deg);
 
-}
+} */
 
 .card {
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.5);
+    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.7);
     padding: 10px 5px;
     width: 85%;
     height: auto;
     /* overflow: auto; */
-    position: relative;
-    top: 50px;
-    z-index: 100;
+    /* position: relative; */
+    /* top: 50px; */
+    /* z-index: 100; */
 }
 
 .card h1 {
@@ -119,18 +119,12 @@
     align-items: center;
 }
 
-.card .grid{
+/* .card .grid{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     height: auto;
-}
-/* SPACE... */
-
-.space {
-    height: 275px;
-    background-color: white;
-}
+} */
 
 /* FOOTER... */
 
@@ -150,8 +144,23 @@
     padding: 0 30px;
 }
 
+.socials .fa {
+    font-size: 23px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.socials .fa:hover {
+    opacity: 0.8;
+}
+
+.socials a {
+    padding: 3px 3px;
+}
+
 /* MEDIA QUERY... */
 
 @media screen and (max-width:904px) {
-    
+
 }

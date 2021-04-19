@@ -9,7 +9,7 @@
   }
 
   body {
-      background-color: orange;
+      /* background-color: orange; */
       padding: 0;   
       margin: 0;
   }
@@ -86,7 +86,7 @@
 .about-card {
     background-color: orange;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.5);
+    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.6);
     padding: 10px 5px;
     height: auto;
     /* overflow: auto; */
@@ -108,7 +108,7 @@
 .projects-card {
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.5);
+    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.6);
     padding: 10px 5px;
     height: auto;
     /* overflow: auto; */
@@ -144,4 +144,19 @@
 
 .copy-info, .socials {
     padding: 0 30px;
+}
+
+.socials .fa {
+    font-size: 23px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.socials .fa:hover {
+    opacity: 0.8;
+}
+
+.socials a {
+    padding: 3px 3px;
 }
