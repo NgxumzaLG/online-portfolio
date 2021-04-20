@@ -70,8 +70,8 @@
 /* SECTION... */
 
 .about {
-    background-color: white;
-    height: auto;
+    /* background-color: white; */
+    background: linear-gradient(orange , white);
     padding: 25px;
     /* position: relative; */
 }
@@ -131,8 +131,9 @@
 .info {
     /* padding-top: 40px; */
     height: auto;
-    background-color: orange;
+    /* background-color: orange; */
     border-top: 0.1px #319ac7 solid;
+    min-height: 75px;
 }
 
 .info .flex{

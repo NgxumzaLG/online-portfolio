@@ -109,7 +109,7 @@
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgb(0, 0, 0, 0.6);
-    padding: 10px 5px;
+    padding: 10px 15px;
     height: auto;
     /* overflow: auto; */
     /* position: relative; */
@@ -117,8 +117,21 @@
     /* z-index: 100; */
 }
 
-.projects-card h3 {
+.projects-card h2{
     text-align: center;
+}
+.basic-webpage1 img, .basic-webpage2 img, .tdd-unit img , .dom-intro img {
+    float: left;
+    padding: 0 10px 10px 5px;
+    border-radius: 5%;
+    border: 0.1px solid orange;
+    box-shadow: 5% rgb(0, 0, 0, 0.9);
+    margin: 0 2% 1.5% 0;
+
+}
+.basic-webpage2, .bootcamp-test, .tdd-unit, .dom-intro {
+    clear: left;
+    border-top: 0.5px solid orange;
 }
 
 
