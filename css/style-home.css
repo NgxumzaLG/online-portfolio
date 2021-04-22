@@ -71,7 +71,6 @@
 
 .about {
     /* background-color: white; */
-    background: linear-gradient(orange , white);
     padding: 25px;
     /* position: relative; */
 }
@@ -89,7 +88,7 @@
 } */
 
 .card {
-    background-color: white;
+    background-color: orange;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgb(0, 0, 0, 0.7);
     padding: 10px 5px;
@@ -107,7 +106,9 @@
 
 .card img{
     float: left;
-    padding: 10px 15px 10px 10px;
+    border-radius: 7%;
+    /* padding: 10px 15px 10px 10px; */
+    margin: 5px 20px;
 }
 
 .card h3{
@@ -115,7 +116,7 @@
 }
 
 .card p{
-    padding: 10px 15px 10px 0;
+    padding: 10px 15px 10px 15px;
     align-items: center;
 }
 
@@ -131,7 +132,7 @@
 .info {
     /* padding-top: 40px; */
     height: auto;
-    /* background-color: orange; */
+    background-color: orange;
     border-top: 0.1px #319ac7 solid;
     min-height: 75px;
 }
@@ -146,13 +147,14 @@
 }
 
 .socials .fa {
-    font-size: 23px;
+    font-size: 24px;
     text-align: center;
     text-decoration: none;
     
 }
 
 .socials .fa:hover {
+    transform: scale(0.95);
     opacity: 0.8;
 }
 
