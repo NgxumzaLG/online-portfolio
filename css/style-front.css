@@ -131,7 +131,7 @@ a {
     transform: scale(0.90);
 }
 
-.basic-webpage1 img, .basic-webpage2 img, .tdd-unit img , .dom-intro img {
+.basic-webpage img, .tdd-unit img, .dom-intro img {
     float: left;
     padding: 0 10px 10px 5px;
     border-radius: 5%;
@@ -141,7 +141,7 @@ a {
 
 }
 
-.basic-webpage2, .bootcamp-test, .tdd-unit, .dom-intro {
+.bootcamp-test, .tdd-unit, .dom-intro {
     clear: left;
     border-top: 0.5px solid orange;
 }
