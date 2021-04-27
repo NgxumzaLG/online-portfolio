@@ -99,10 +99,11 @@ a {
 }
 
 .about-card img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
     height: auto;
-    /* padding: 0 0 5px 5px; */
-    margin: 5px 12px;
     border-radius: 5%;
 
 }
@@ -142,14 +143,108 @@ a {
     font-size: 24px;
     text-align: center;
     text-decoration: none;
-    
+    color: white;
 }
 
 .socials .fa:hover {
     transform: scale(0.90);
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .socials a {
     padding: 3px 3px;
+}
+
+/* MEDIA QUERY... */
+
+@media screen and (max-width:992px) {
+    .about-card img{
+        margin: 5px 9px;
+    }
+}
+
+@media screen and  (max-width:688px) {
+
+    .about-card img {
+        margin: 5px 6px;
+    }
+
+}
+
+@media screen and (max-width: 516px) {
+
+    .navbar {
+        height: auto;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        /* width: auto;
+        height: auto; */
+        min-height: 50px;
+        background-color: rgb(0, 0, 0, 0.1);
+        border-radius: 5px;
+        border: 0.1px solid #319ac7;
+    }
+    
+    .navbar a {
+        padding: 10px;
+        margin: 0 5px;
+    }
+    
+    .navbar a:hover {
+        border-bottom: 3px solid white;
+        font-weight: bold;
+    }
+    
+    .current a {
+        color: white;
+    }
+
+    .navbar h3 {
+        text-align: center;
+    }
+
+    .showcase .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card img {
+        display: block;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+
+    .about-card {
+        justify-self: center;
+        margin: auto;
+    }
+
+    .info .flex {
+        flex-direction: column;
+    }
+
+    .copy-info {
+        text-align: center;
+    }
+
+    .socials a {
+        padding: 10px 5px;
+    }
+
+    .socials {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px
+    }
+
 }

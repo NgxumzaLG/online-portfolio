@@ -131,12 +131,12 @@ a {
     font-size: 24px;
     text-align: center;
     text-decoration: none;
-    
+    color: white;
 }
 
 .socials .fa:hover {
     transform: scale(0.95);
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .socials a {
@@ -146,6 +146,89 @@ a {
 
 /* MEDIA QUERY... */
 
-@media screen and (max-width:904px) {
+/* @media screen and (max-width:1311px){
+
+} */
+
+@media screen and (max-width:992px) {
+    .card img{
+        width: 37%;
+        height: auto;
+        float: left;
+        border-radius: 7%;
+        margin: 5px 20px;
+    }
+
+}
+
+@media screen and  (max-width:688px) {
+
+    .card {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 516px) {
+
+    .navbar {
+        height: auto;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        min-height: 50px;
+        background-color: rgb(0, 0, 0, 0.1);
+        border-radius: 5px;
+        border: 0.1px solid #319ac7;
+    }
+    
+    .navbar a {
+        padding: 10px;
+        margin: 0 5px;
+    }
+    
+    .navbar a:hover {
+        border-bottom: 3px solid white;
+        font-weight: bold;
+    }
+    
+    .current a {
+        color: white;
+    }
+
+    .navbar h3 {
+        text-align: center;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    .info .flex {
+        flex-direction: column;
+    }
+
+    .copy-info {
+        text-align: center;
+    }
+
+    .socials a {
+        padding: 10px 5px;
+    }
+
+    .socials {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px
+    }
+
 
 }
