@@ -198,7 +198,7 @@ a {
 
 @media screen and  (max-width:688px) {
 
-    .basic-webpage img, .tdd-unit img, .dom-intro img {
+    .basic-webpage img, .tdd-unit img, .dom-intro img, .dom-tests img {
         width: 55%;
         height: auto;
     }
@@ -252,6 +252,7 @@ a {
 
     .showcase .grid {
         grid-template-columns: 1fr;
+        /* width: auto; */
     }
 
     .about-card img {
