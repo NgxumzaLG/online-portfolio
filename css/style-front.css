@@ -121,7 +121,7 @@ a {
     text-align: center;
 }
 
-.btn {
+.btn-links {
     display: inline-block;
     padding: 5px 10px;
     cursor: pointer;
@@ -130,11 +130,11 @@ a {
     margin: 1%;
 }
 
-.btn:hover {
+.btn-links:hover {
     transform: scale(0.90);
 }
 
-.basic-webpage img, .tdd-unit img, .dom-intro img {
+.basic-webpage img, .tdd-unit img, .dom-intro img, .dom-tests img {
     float: left;
     padding: 0 10px 10px 5px;
     border-radius: 5%;
@@ -144,12 +144,12 @@ a {
 
 }
 
-.bootcamp-test, .tdd-unit, .dom-intro {
+.tdd-unit, .dom-intro, .dom-tests {
     clear: left;
     border-top: 0.5px solid orange;
 }
 
-.basic-webpage, .tdd-unit, .dom-intro {
+.basic-webpage, .tdd-unit, .dom-intro, .dom-tests {
     margin: 5px;
 }
 
