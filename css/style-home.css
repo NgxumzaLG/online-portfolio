@@ -34,7 +34,15 @@ a {
 
 .flex {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.7);
+    padding: 10px 5px;
 }
 
 
@@ -70,7 +78,7 @@ a {
 }
 
 
-/* SECTION... */
+/* SECTION ABOUT... */
 
 .about {
     /* background-color: white; */
@@ -78,7 +86,7 @@ a {
     /* position: relative; */
 }
 
-.card {
+.about .card {
     background-color: orange;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgb(0, 0, 0, 0.7);
@@ -87,24 +95,49 @@ a {
     height: auto;
 }
 
-.card h1 {
+.about .card h1 {
     text-align: center;
 }
 
-.card img{
+.about .card img{
     float: left;
     border-radius: 7%;
     /* padding: 10px 15px 10px 10px; */
     margin: 5px 20px;
 }
 
-.card h3{
+.about .card h3{
     padding-top: 15px;
 }
 
-.card p{
+.about .card p{
     padding: 10px 15px 10px 15px;
     align-items: center;
+}
+
+/* SECTION LANGUAGES... */
+
+.languages .lang-text h1 {
+    text-align: center;
+}
+
+.languages .flex {
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+
+.languages .card {
+    margin: 7.5px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
+    text-align: center;
+    background-color: white;
+    width: auto;
+    transition: transform 0.3s ease-in;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
 }
 
 

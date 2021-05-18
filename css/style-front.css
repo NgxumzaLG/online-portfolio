@@ -84,6 +84,8 @@ a {
     height: auto;
     padding: 25px;
     background-color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-card {
@@ -94,6 +96,7 @@ a {
     height: auto;
     justify-content: center;
     align-content: center;
+    align-self: flex-start;
 }
 
 .about-card h3 {
@@ -115,6 +118,7 @@ a {
     box-shadow: 0 5px 20px rgb(0, 0, 0, 0.6);
     padding: 10px 15px;
     height: auto;
+    align-self: flex-start;
 }
 
 .projects-card h2{
@@ -134,7 +138,7 @@ a {
     transform: scale(0.90);
 }
 
-.basic-webpage img, .tdd-unit img, .dom-intro img, .dom-tests img {
+.basic-webpage img, .tdd-tests img, .dom-intro img, .dom-tests img {
     float: left;
     padding: 0 10px 10px 5px;
     border-radius: 5%;
@@ -144,12 +148,12 @@ a {
 
 }
 
-.tdd-unit, .dom-intro, .dom-tests {
+.tdd-tests, .dom-intro, .dom-tests {
     clear: left;
     border-top: 0.5px solid orange;
 }
 
-.basic-webpage, .tdd-unit, .dom-intro, .dom-tests {
+.basic-webpage, .tdd-tests, .dom-intro, .dom-tests {
     margin: 5px;
 }
 
@@ -265,6 +269,7 @@ a {
 
     .about-card {
         justify-self: center;
+        align-content: center;
         margin: auto;
     }
 
