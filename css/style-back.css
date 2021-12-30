@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
 
 
-/* UNIVERSAL.. */
+/***** UNIVERSAL ***********************************/
 
 * {
     font-family: 'Lato', Helvetica, sans-serif;
@@ -15,15 +15,8 @@ body {
       margin: 0;
 }
 
-ul {
-      list-style: none;
-}
 
-a {
-      text-decoration: none;
-}
-
-/* UTILITIES */
+/***** UTILITIES ***********************************/
 
 .container {
     max-width: 1024px;
@@ -38,7 +31,7 @@ a {
 }
 
 
-/* HEADER... */
+/***** HEADER ***********************************/
 
 .navbar  {
     background-color: orange;
@@ -53,11 +46,13 @@ a {
 
 .navbar ul {
     display: flex;
+    list-style: none;
 }
 
 .navbar a {
     padding: 10px;
     margin: 0 5px;
+    text-decoration: none;
 }
 
 .navbar a:hover {
@@ -70,7 +65,7 @@ a {
 }
 
 
-/* SHOWCASE... */
+/***** SHOWCASE ***********************************/
 
 .showcase {
     height: auto;
@@ -99,6 +94,7 @@ a {
 
 .about-card h3 {
     text-align: center;
+    text-decoration: underline 3.5px white;
 }
 
 .about-card img{
@@ -115,23 +111,93 @@ a {
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgb(0, 0, 0, 0.6);
-    padding: 10px 5px;
+    padding: 10px 15px;
     height: auto;
     align-self: flex-start;
 }
 
 .projects-card h2 {
     text-align: center;
+    text-decoration: underline 3.5px #319ac7;
 }
 
+.projects-card p {
+    font-size: 15.5px;
+    text-align: justify;
+}
 
-/* FOOTER... */
+.btn-links {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: orange;
+    border-radius: 5px;
+    margin: 1%;
+    text-decoration: none;
+    font-size: 15.5px;
+}
+
+.btn-links:hover {
+    transform: scale(0.90);
+}
+
+.greetings img, .registration-numbers img, .waiter img, .yoga-saga img, .avo-shopper img {
+    float: left;
+    padding: 0 10px 10px 5px;
+    border-radius: 5%;
+    border: 0.1px solid orange;
+    box-shadow: 5% rgb(0, 0, 0, 0.9);
+    margin: 0 2% 1.5% 0;
+
+}
+
+.registration-numbers, .waiter, .avo-shopper, .yoga-saga, .all-repos {
+    clear: left;
+    border-top: 0.5px solid orange;
+}
+
+.greetings, .registration-numbers, .waiter, .avo-shopper, .yoga-saga {
+    margin: 5px;
+}
+
+.all-repos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85px;
+}
+
+.all-repos .repo-info {
+    display: flex;
+    margin: 5px 0 10px 0;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.all-repos .repo-info .head{
+    margin-left: 30px;
+    color: orange;
+}
+
+.all-repos .repo-info .head a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.all-repos .repo-info i {
+    font-size: 30px;
+}
+
+/***** FOOTER ***********************************/
 
 .info {
-    /* padding-top: 40px; */
+    margin-top: 10px;
     height: auto;
     background-color: orange;
     border-top: 0.1px #319ac7 solid;
+    min-height: 75px;
 }
 
 .info .flex{
@@ -143,15 +209,28 @@ a {
     padding: 0 30px;
 }
 
+.copy-info h4 {
+    margin: 15px 2.5px 7.5px 2.5px;
+}
+
+.copy-info p {
+    margin: 2.5px 2.5px 15px 2.5px;
+}
+
+.copy-info a {
+    color: white;
+    text-decoration: none;
+}
+
 .socials .fa {
-    font-size: 24px;
+    font-size: 26px;
     text-align: center;
     text-decoration: none;
     color: white;
 }
 
-.socials .fa:hover {
-    transform: scale(0.90);
+.socials .fa:hover, .copy-info a:hover {
+    transform: scale(0.95);
     opacity: 0.5;
 }
 
@@ -159,18 +238,46 @@ a {
     padding: 3px 3px;
 }
 
-/* MEDIA QUERY... */
+/***** MEDIA QUERY ***********************************/
 
 @media screen and (max-width:992px) {
     .about-card img{
         margin: 5px 9px;
     }
+
 }
 
 @media screen and  (max-width:688px) {
-
     .about-card img {
         margin: 5px 6px;
+    }
+
+    .info .flex{
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .copy-info, .socials {
+        padding: 10px 30px;
+    }
+    
+    .copy-info h4 {
+        margin: 2.5px 2.5px 2.5px 2.5px;
+        text-align: center;
+    }
+    
+    .copy-info p {
+        margin: 2.5px 5px 15px 2.5px;
+    }
+    
+    .copy-info a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .socials a {
+        padding: 3px 5px;
     }
 
 }
@@ -190,8 +297,6 @@ a {
         justify-content: center;
         align-items: center;
         padding: 5px;
-        /* width: auto;
-        height: auto; */
         min-height: 50px;
         background-color: rgb(0, 0, 0, 0.1);
         border-radius: 5px;
@@ -233,10 +338,6 @@ a {
         margin: auto;
     }
 
-    .info .flex {
-        flex-direction: column;
-    }
-
     .copy-info {
         text-align: center;
     }
@@ -249,6 +350,17 @@ a {
         display: flex;
         flex-wrap: wrap;
         padding: 5px
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+    .greetings img, .registration-numbers img, .waiter img, .yoga-saga img, .avo-shopper img {
+        float: none;
+    }
+
+    .projects-card p {
+        margin: 7.5px 10px;
     }
 
 }

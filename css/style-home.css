@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
 
 
-/* UNIVERSAL.. */
+/***** UNIVERSAL ***********************************/
 
 * {
     font-family: 'Lato', Helvetica, sans-serif;
@@ -15,15 +15,7 @@ body {
       margin: 0;
 }
 
-ul {
-      list-style: none;
-}
-
-a {
-      text-decoration: none;
-}
-
-/* UTILITIES */
+/***** UTILITIES ***********************************/
 
 .container {
     max-width: 1024px;
@@ -46,7 +38,7 @@ a {
 }
 
 
-/* HEADER... */
+/***** HEADER ***********************************/
 
 .navbar  {
     background-color: orange;
@@ -61,11 +53,13 @@ a {
 
 .navbar ul {
     display: flex;
+    list-style: none;
 }
 
 .navbar a {
     padding: 10px;
     margin: 0 5px;
+    text-decoration: none;
 }
 
 .navbar a:hover {
@@ -78,31 +72,30 @@ a {
 }
 
 
-/* SECTION ABOUT... */
+/***** SECTION ABOUT ***********************************/
 
-.about {
-    /* background-color: white; */
-    padding: 25px;
-    /* position: relative; */
+.about, .languages, .tech-stack {
+    margin: 20px auto;
 }
 
-.about .card {
+.about .card, .tech-stack .card {
     background-color: orange;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgb(0, 0, 0, 0.7);
     padding: 10px 5px;
-    width: 85%;
+    width: 87.5%;
     height: auto;
+    margin: auto;
 }
 
-.about .card h1 {
+.about .card h1, .tech-stack .card h1 {
     text-align: center;
+    text-decoration: underline 3.5px white;
 }
 
 .about .card img{
     float: left;
     border-radius: 7%;
-    /* padding: 10px 15px 10px 10px; */
     margin: 5px 20px;
 }
 
@@ -111,40 +104,145 @@ a {
 }
 
 .about .card p{
-    padding: 10px 15px 10px 15px;
+    padding: 2.5px 15px 2.5px 15px;
     align-items: center;
+    text-align: justify;
+    margin: 5px 0;
 }
 
-/* SECTION LANGUAGES... */
+.resume {
+    display: inline-block;
+    padding: 7.5px 15px;
+    cursor: pointer;
+    background: white;
+    border-radius: 5px;
+    margin: 15px 5px 10px 10px;
+    color: orange;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+    border: 2.5px solid white;
+}
 
-.languages .lang-text h1 {
+.resume:hover {
+    background: none;
+    color: white;   
+}
+
+
+/***** SECTION SKILLS ***********************************/
+
+.skills .skills-text h1 {
     text-align: center;
+    margin: 5px 0 15px 0;
+    text-decoration: underline 3.5px #319ac7;
 }
 
-.languages .flex {
-    /* justify-content: space-between; */
+.skills .flex {
     flex-wrap: wrap;
+    overflow: visible;
 }
 
-.languages .card {
+.skills .card {
     margin: 7.5px;
+
     border-radius: 10px;
     box-shadow: 0 5px 15px rgb(0, 0, 0, 0.5);
     text-align: center;
     background-color: white;
-    width: auto;
-    transition: transform 0.3s ease-in;
+    min-width: 85px;
+    transition: transform 0.2s ease-in;
 }
 
-.languages .card:hover {
-    transform: translateY(-15px);
+.skills .card h4 {
+    margin: 2px 5px 5px 5px;
+}
+
+.skills .card h3 {
+    margin: 30px 0 5px 0;
+}
+
+.skills .card img {
+    width: 100px;
+    margin: 0 5px;
+}
+
+.skills .card:hover {
+    transform: translateY(-20px);
+}
+
+/***** SECTION TECH-STACK ***********************************/
+
+.tech-stack .card {
+    width: 70%;
+}
+
+.tech-stack .card h1 {
+    margin: 17.5px 0 10px 0;
+}
+
+.tech1, .tech2 {
+    align-self: flex-start;
+}
+
+.tech-stack .card .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: auto;
+    padding: 0px 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 
-/* FOOTER... */
+/***** SECTION CONTACT DETAILS ***********************************/
+
+.contact-details .details-text h1 {
+    text-align: center;
+    margin: 5px 0 15px 0;
+    text-decoration: underline 3.5px #319ac7;
+}
+
+.contact-details .details-text {
+    /* background-color: orange; */
+    width: 60%;
+}
+
+.contact-details .details-text .contact-icons {
+    margin: 10px 0;
+}
+
+.contact-details .contact-icons .row  {
+    display: flex;
+    height: 65px;
+    flex: 1;
+    align-items: center;
+}
+
+.contact-details .contact-icons .row i {
+    font-size: 25px;
+    color: orange;
+}
+
+.contact-details .contact-icons .row .contact-info {
+    margin-left: 30px;
+}
+
+.contact-details .contact-icons .row .contact-info .head {
+    font-weight: 600;
+}
+.contact-details .contact-icons  .big-row {
+    display: flex;
+    padding: 0 15px;
+}
+
+
+/***** FOOTER ***********************************/
 
 .info {
-    /* padding-top: 40px; */
+    margin-top: 10px;
     height: auto;
     background-color: orange;
     border-top: 0.1px #319ac7 solid;
@@ -160,14 +258,27 @@ a {
     padding: 0 30px;
 }
 
+.copy-info h4 {
+    margin: 15px 2.5px 7.5px 2.5px;
+}
+
+.copy-info p {
+    margin: 2.5px 2.5px 15px 2.5px;
+}
+
+.copy-info a {
+    color: white;
+    text-decoration: none;
+}
+
 .socials .fa {
-    font-size: 24px;
+    font-size: 26px;
     text-align: center;
     text-decoration: none;
     color: white;
 }
 
-.socials .fa:hover {
+.socials .fa:hover, .copy-info a:hover {
     transform: scale(0.95);
     opacity: 0.5;
 }
@@ -177,14 +288,14 @@ a {
 }
 
 
-/* MEDIA QUERY... */
+/***** MEDIA QUERY ***********************************/
 
 /* @media screen and (max-width:1311px){
 
 } */
 
 @media screen and (max-width:992px) {
-    .card img{
+    .about .card img{
         width: 37%;
         height: auto;
         float: left;
@@ -192,18 +303,80 @@ a {
         margin: 5px 20px;
     }
 
+    .about .card {
+        width: 90%;
+    }
+
+    .tech-stack .card {
+        width: 75%;
+    }
+
+    .contact-details .details-text {
+        width: 60%;
+    }
+
+    .contact-details .contact-icons .row .contact-info {
+        margin-left: 20px;
+    }
 }
 
-@media screen and  (max-width:688px) {
-
-    .card {
-        width: 90%;
+@media screen and (max-width:818px) {
+    .contact-details .details-text {
+        padding: 0px 15px;
+        width: 65%;
     }
 
 }
 
-@media screen and (max-width: 516px) {
+@media screen and  (max-width:688px) {
+    .about .card {
+        width: 90%;
+    }
 
+    .tech-stack .card {
+        width: 85%;
+    }
+
+    .contact-details .details-text {
+        padding: 0px 10px;
+        width: 80%;
+    }
+
+    .contact-details .contact-icons .row .contact-info {
+        margin-left: 10px;
+    }
+
+    .info .flex{
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .copy-info, .socials {
+        padding: 10px 30px;
+    }
+    
+    .copy-info h4 {
+        margin: 2.5px 2.5px 2.5px 2.5px;
+        text-align: center;
+    }
+    
+    .copy-info p {
+        margin: 2.5px 5px 15px 2.5px;
+    }
+    
+    .copy-info a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .socials a {
+        padding: 3px 5px;
+    }
+    
+}
+
+@media screen and (max-width: 516px) {
     .navbar {
         height: auto;
     }
@@ -241,12 +414,25 @@ a {
         text-align: center;
     }
 
-    .card {
-        width: 95%;
+    .about .card {
+        width: 90%;
+    }
+
+    .skills .card:hover {
+        transform: translateY(-10px);
+    }
+
+    .tech-stack .card {
+        width: 90%;
+    }
+
+    .contact-details .details-text {
+        padding: 0px 5px;
+        width: 90%;
     }
 
     .info .flex {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .copy-info {
@@ -263,5 +449,35 @@ a {
         padding: 5px
     }
 
+}
+
+@media screen and (max-width: 440px) {
+    .contact-details .contact-icons  .big-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 15px;
+        margin: auto;
+    }
+
+    .contact-details .contact-icons .row .contact-info {
+        margin-left: 30px;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    .tech-stack .card .grid {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    .tech1 ul {
+        margin: 5px 0 0 0;
+    }
+
+    .tech2 ul {
+        margin: 0 0 7.5px 0;
+    }
 
 }
