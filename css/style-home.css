@@ -108,6 +108,7 @@ body {
     align-items: center;
     text-align: justify;
     margin: 5px 0;
+    /* font-size: 15.9px; */
 }
 
 .resume {
@@ -418,12 +419,20 @@ body {
         width: 90%;
     }
 
+    .about .card p{
+        font-size: 15.82px;
+    }
+
     .skills .card:hover {
         transform: translateY(-10px);
     }
 
     .tech-stack .card {
         width: 90%;
+    }
+
+    .tech1, .tech2 {
+        font-size: 15.82px;
     }
 
     .contact-details .details-text {
@@ -460,8 +469,12 @@ body {
         margin: auto;
     }
 
+    .contact-details .contact-icons .row  {
+        margin: 3px 0;
+    }
+
     .contact-details .contact-icons .row .contact-info {
-        margin-left: 30px;
+        margin: 1.5px 0 1.5px 30px;
     }
 
 }
