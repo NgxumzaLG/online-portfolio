@@ -10,7 +10,6 @@
 }
 
 body {
-      /* background-color: orange; */
       padding: 0;   
       margin: 0;
 }
@@ -108,7 +107,6 @@ body {
     align-items: center;
     text-align: justify;
     margin: 5px 0;
-    /* font-size: 15.9px; */
 }
 
 .resume {
@@ -290,10 +288,6 @@ body {
 
 
 /***** MEDIA QUERY ***********************************/
-
-/* @media screen and (max-width:1311px){
-
-} */
 
 @media screen and (max-width:992px) {
     .about .card img{
