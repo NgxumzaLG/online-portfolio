@@ -109,7 +109,7 @@ body {
     margin: 5px 0;
 }
 
-.resume {
+.resume, .awd-cert {
     display: inline-block;
     padding: 7.5px 15px;
     cursor: pointer;
@@ -124,7 +124,7 @@ body {
     border: 2.5px solid white;
 }
 
-.resume:hover {
+.resume:hover, .awd-cert:hover {
     background: none;
     color: white;   
 }
@@ -205,7 +205,6 @@ body {
 }
 
 .contact-details .details-text {
-    /* background-color: orange; */
     width: 60%;
 }
 

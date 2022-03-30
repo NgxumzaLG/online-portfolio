@@ -141,7 +141,7 @@ body {
     transform: scale(0.90);
 }
 
-.basic-webpage img, .matching-days img, .dom-intro img, .xpense-monitor img {
+.basic-webpage img, .matching-days img, .dom-intro img, .shoe-catalogue img, .xpense-monitor img {
     float: left;
     padding: 0 10px 10px 5px;
     border-radius: 5%;
@@ -151,12 +151,12 @@ body {
 
 }
 
-.matching-days, .dom-intro, .xpense-monitor, .all-repos {
+.matching-days, .dom-intro, .shoe-catalogue, .xpense-monitor, .all-repos {
     clear: left;
     border-top: 0.5px solid orange;
 }
 
-.basic-webpage, .matching-days, .dom-intro, .xpense-monitor {
+.basic-webpage, .matching-days, .dom-intro, .shoe-catalogue, .xpense-monitor {
     margin: 5px;
 }
 
@@ -354,7 +354,7 @@ body {
 }
 
 @media screen and (max-width: 440px) {
-    .basic-webpage img, .matching-days img, .dom-intro img, .xpense-monitor img {
+    .basic-webpage img, .matching-days img, .dom-intro img, .shoe-catalogue img, .xpense-monitor img {
         float: none;
     }
 
